@@ -1,0 +1,64 @@
+.head{
+background-color: #3b5998;
+height: 80px;
+}
+#nom{
+    width: 30px;
+    height: 30px;
+}
+.moll{
+
+    position: relative;
+    bottom: 30px;
+    left:  10px;
+color: white;
+}
+.nam{
+position: relative;
+bottom: 10px;
+left: 155px;
+color: white;
+}
+.moon{
+position: relative;
+bottom: 30px;
+right: 95px;
+color: white;
+}
+#account{
+position: relative;
+top: 25px;
+right: 165px;
+color: white;
+}
+#btn{
+position: relative;
+right: 95px;
+color: white;
+background-color:  #3b5998;
+border:1px solid #29487d;
+}
+.mov{
+    position: relative;
+    left: 240px;
+    bottom: 40px;
+    color:10px thick #000000;
+    font-size: 15px;
+}
+#more{
+    position: relative;
+    left: 240px;
+    bottom: 40px;
+    color: black;
+    font-size: 15px;
+}
+#move{
+    position: relative;
+    left: 240px;
+    bottom: 40px;
+    color: black;
+    font-size: 15px;
+}
+.text{
+color:  #666;
+}
