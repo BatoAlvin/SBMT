@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="content"
+      content="width=device-width, initial-scale=1.0"
+      charset="utf-8"
+    />
+    <title>Accessing elements in html (HTML dom)</title>
+<link rel="stylesheet" href="./bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <style type="text/css">
+      html {
+        font-family: sans-serif;
+      }
+      form {
+        /* max-width: 500px; */
+        margin: 0 250px;
+        padding: 0 35px;
+        font-weight: 90px;
+        width: 900px;
+      }
+    </style>
+  </head>
+  <div class="container-fluid">
+  <body onload="document.loanform.firstid.focus();">
+<!-- Creating form element -->
+
+    <form
+      name="loanform"
+      onsubmit="return formValidation();"
+      style="margin-right: 80px; background-color:beige;border: 10px solid teal;border-radius: 10px;padding-bottom: 50px;"
+    >
+      <h1 style="margin-left: 100px;margin-bottom: 30px;">Loan Registration Form</h1>
+      <label for="firstid">First Name</label>
+      <input
+        style="margin-left: 50px;padding: 10px;border-radius: 5px; width: 200px;"
+        type="text"
+        name="firstid"
+        placeholder=" first name"
+      />
+
+      <label style="margin-left: 40px;"for="lastid">Last Name</label>
+      <input style="margin-left: 30px;padding: 10px;border-radius: 5px;width: 200px;" type="text" name="lastid" placeholder=" last name" /><br /><br />
+
+      <label for="">Email</label>
+      <input style="margin-left:90px;padding: 10px;border-radius: 5px;width: 200px;" type="text" name="email" placeholder=" Email" /><br /><br />
+
+      <label for="">Occupation</label>
+      <input style="margin-left: 50px;padding: 10px;border-radius: 5px;width: 200px;" type="text" name="job" placeholder=" Occupation"/>
+      
+
+      <label style="margin-left: 40px;"for="">Nationality</label>
+      
+        <select style="padding: 10px;margin-left: 5px;border-radius: 5px;width: 230px;margin-left: 32px;"name="origin">
+    
+          <option selected="" value="Default">Please select your Nationality</option>
+          <option value="AF"> Ugandan</option>
+          <option value="AL"> Kenyan</option>
+          <option value="DZ"> Sudanese</option>
+          <option value="AS"> Nigerian</option>
+          <option value="AD"> Other</option>
+          </select>
+      <br /><br />
+
+      <label for="">Telephone</label>
+      <input style="margin-left: 57px;padding: 10px;border-radius: 5px;width: 200px;" type="text" name="tel" placeholder="  Telephone" /><br /><br />
+      
+      <label>Address</label>
+      <input style="margin-left: 72px;padding: 10px;border-radius: 5px;width: 200px;" type="text" name="address" placeholder="  Address"/>
+
+      
+      <label  style="margin-left: 40px;">Loan Range </label>
+      
+      <select style="padding: 10px;margin-left: 25px;border-radius: 5px;width: 230px;"name="range">
+    
+        <option selected="" value="Default" >Please select a range</option>
+        <option value=""> 50,000 - 100,000</option>
+        <option value=""> 100,000 - 500,000</option>
+        <option value=""> 500,000 - 1,000,000</option>
+        <option value=""> 1,000,000 - 5,000,000</option>
+        <option value=""> 5,000,000 - 10,000,000</option>
+        </select><br><br>
+
+      <label style="margin-right: 70px;" for="">Gender</label>
+      <label for="">Male</label>
+      <input style="margin-left: 5px;"type="radio" name="msex" value="" />
+
+      <label style="margin-left: 5px;"for="">Female</label>
+      <input style="margin-left: 5px;"type="radio" name="fsex" value="" /><br /><br />
+
+      <label for="">Specific Amount</label>
+      <input style="padding: 10px;margin-left: 17px;border-radius: 5px;width: 200px;"type="text" name="specific" placeholder="  Only figures">
+    
+<!-- Creating buttons for validation -->
+      <button style="color: black;padding: 10px;margin-top: 10px; border-radius: 7px;background-color: teal;font-size: 20px;width: 130px;position: relative;top: 60px;right: 370px;" type="submit" name="submit">Submit</button>
+      <button style="margin-left: 40px;padding: 10px;margin-top: 10px;color: black;font-size: 20px;width: 130px;background-color: crimson;border-radius: 7px;position: relative;top: 60px;right: 370px;" type="reset">Cancel</button><br><br>
+    
+      <blockquote style="margin-left:10px;font-size: 12px;color: #737373;position: relative;top:50px;">Alvin &copy;2020</blockquote>
+    </form>
+    <script src="p.js"></script>
+</div>
+  </body>
+</html>
